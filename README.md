@@ -33,6 +33,8 @@ read.me — описание бота
 	DATA_BASE_LOGIN=user
 	DATA_BASE_KEY=password
 	DATA_BASE_NAME=my_pet_bot_db
-4. Запустите бота: python main.py
+4. Создайте базу данных (я использовал phpmyadmin) c такими данными:
+
+5. Запустите бота: python main.py
 
 
