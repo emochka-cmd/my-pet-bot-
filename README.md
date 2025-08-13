@@ -34,7 +34,19 @@ read.me — описание бота
 	DATA_BASE_KEY=password
 	DATA_BASE_NAME=my_pet_bot_db
 4. Создайте базу данных (я использовал phpmyadmin) c такими данными:
-
+CREATE TABLE users (
+    id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+    id_telegram VARCHAR(50) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password_hash VARCHAR(64),
+    salt VARCHAR(64) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    surname VARCHAR(100) NOT NULL,
+    user_money DECIMAL(10,2) DEFAULT 0.00,
+    PRIMARY KEY (id),
+    UNIQUE KEY (id_telegram),
+    UNIQUE KEY (email)
+)
 5. Запустите бота: python main.py
 
 
