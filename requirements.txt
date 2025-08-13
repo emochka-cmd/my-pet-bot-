@@ -1,0 +1,4 @@
+pyTelegramBotAPI
+pymysql
+python-dotenv
+email_validation
